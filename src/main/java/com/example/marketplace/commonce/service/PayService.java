@@ -5,7 +5,7 @@ public class PayService implements BaseService {
 
     @Override
     public Object execute(Object input) {
-        if (SomeBase.myBase().get("userId") != USER_ID) {return 0.0;}
+        if (Integer.parseInt((String) input) != USER_ID) {return 0.0;}
         return (((Double) SomeBase.myBase().get("countItem")) * ((Double)SomeBase.myBase().get("itemId")));
     }
 
