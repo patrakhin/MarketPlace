@@ -1,12 +1,32 @@
 package com.example.marketplace.commonce.service;
 
-public class PayService implements BaseService {
-    private static final Integer USER_ID =  1;
 
-    @Override
-    public Object execute(Object input) {
-        if (Integer.parseInt((String) input) != USER_ID) {return 0.0;}
-        return (((Double) SomeBase.myBase().get("countItem")) * ((Double)SomeBase.myBase().get("itemId")));
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class PayService  {
+
+    public List<Integer> index (){
+        return ;
+    }
+    public Person authenticationId (int id) {
+
     }
 
+    /*private Map<Integer,Object> result;
+    public PayService() {
+        this.result = new HashMap<>();
+    }
+
+    ReadService readAllPerson = ()->result;
+
+    public Double getPrice() throws Exception{
+        Integer expectedPerson = (Integer) readAllPerson.getAllPersons().get("userId");
+        if (expectedPerson != SomeBase.myBase().get("userId")) {return 0.0;}
+        Double price = (Double) (SomeBase.myBase().get(""))*(Double) (); //must be can data through userId
+        return price;
+    }
+    //we are getting need one person
+*/
 }
