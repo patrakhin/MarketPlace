@@ -1,7 +1,8 @@
 package com.example.marketplace.commonce.service;
 
-import java.util.List;
+import jakarta.annotation.Nullable;
 
-public interface ReadService {
-    List<Person> getAllPersons();
+public interface ReadService <K,V>{
+    @Nullable
+    V get (K key);
 }
