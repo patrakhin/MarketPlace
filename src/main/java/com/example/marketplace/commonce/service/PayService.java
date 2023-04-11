@@ -8,7 +8,7 @@ import java.util.Map;
 public class PayService  {
 
     public List<Integer> index (){
-        return ;
+        return null;
     }
     public Person authenticationId (int id) {
 
